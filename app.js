@@ -49,6 +49,7 @@ app.use(httpLogger());
 
 //cors setup
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // Enable pre-flight requests for all routes
 
 // Compression middleware
 app.use(compression());
