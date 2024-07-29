@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "bullmq": "^5.10.4",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -34,6 +35,7 @@
     "jsonwebtoken": "^9.0.2",
     "module-alias": "^2.2.3",
     "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
     "rotating-file-stream": "^3.2.3",
     "winston": "^3.13.1",
     "winston-daily-rotate-file": "^5.0.0",
@@ -50,6 +52,10 @@
     "@services": "src/services",
     "@middlewares": "src/middlewares",
     "@utils": "src/utils",
-    "@views": "src/views"
+    "@views": "src/views",
+    "@cron": "src/cron-jobs",
+    "@tasks": "src/cron-jobs/tasks",
+    "@queues": "src/jobs/queues",
+    "@workers": "src/jobs/workers"
   }
 }

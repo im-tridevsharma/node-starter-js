@@ -9,6 +9,12 @@ require("module-alias/register");
 //load env variables
 require("dotenv").config();
 
+// Load cron jobs
+require("@cron");
+
+//load workers
+require("@workers");
+
 /* Get all the modules required... */
 const express = require("express");
 const helmet = require("helmet");
