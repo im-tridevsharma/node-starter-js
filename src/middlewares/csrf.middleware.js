@@ -4,7 +4,7 @@ const csrfProtection = csrf();
 const secret = process.env.CSRF_SECRET || "your-secret-key"; // Set a secret for CSRF token generation
 
 //load messages
-const messages = require("@config/messages.config");
+const messages = require("@lang/messages");
 
 // Middleware to handle CSRF token creation and validation
 function csrfMiddleware(req, res, next) {

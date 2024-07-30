@@ -7,7 +7,7 @@ const router = Router();
 const apiRouteHandler = require("@routes/api");
 
 //load messages
-const messages = require("@config/messages.config");
+const messages = require("@lang/messages");
 
 const currentApiVersion = process.env.API_VERSION || "v1";
 

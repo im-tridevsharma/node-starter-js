@@ -56,7 +56,8 @@
     "@views": "src/views",
     "@cron": "src/cron-jobs",
     "@tasks": "src/cron-jobs/tasks",
-    "@queues": "src/jobs/queues",
-    "@workers": "src/jobs/workers"
+    "@queues": "src/jobs/queue",
+    "@workers": "src/jobs/worker",
+    "@lang": "src/lang"
   }
 }
