@@ -28,3 +28,8 @@ npm install
 ```
 npm run dev
 ```
+
+## Project Directory Structure
+
+![image](https://github.com/user-attachments/assets/bf83e023-d90a-422b-b9cd-25a1c1fc76ff)
+
