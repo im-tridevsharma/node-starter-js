@@ -23,6 +23,8 @@ const cookieParser = require("cookie-parser");
 const cors = require('cors');
 const compression = require('compression');
 const xssClean = require('xss-clean');
+const mongoSanitize = require("express-mongo-sanitize");
+const hpp = require("hpp");
 const applicationRouteHandler = require("@routes"); //main route handler
 
 //service load
@@ -44,6 +46,9 @@ const app = express();
 //security middlewares
 app.use(helmet(helmetOptions));
 
+// HPP middleware to prevent HTTP Parameter Pollution
+app.use(hpp());
+
 //logger
 app.use(httpLogger());
 
@@ -61,6 +66,7 @@ app.use(cookieParser());
 
 //xss middleware
 app.use(xssClean());
+app.use(mongoSanitize());
 
 // Apply CSRF protection middleware
 app.use(csrfProtection);
