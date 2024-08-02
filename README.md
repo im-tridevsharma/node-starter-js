@@ -2,7 +2,7 @@
 ### A simple tool to start your node js project with Power of Express Js.
 
 <br> <br>
-
+<a href="https://github.com/im-tridevsharma/node-starter-ts.git">Go to Typescript Version</a>
 > Clone this repository and start building your project
 
 ```
